@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+    <!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">EBlog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item  item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item  item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item  item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="#" class="m-item  item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="m-item right item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+
+        <a href="#" class="ui menu toggle black icon button  m-mobile-show" style="position: absolute;top: 0;right:0 ">
+            <i class="sidebar icon">
+
+            </i>
+        </a>
+    </nav>
+<!--    middle-->
+    <div class="m-container-default m-padded-tb-large animate__heartBeat">
+
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/1005/100/100" alt="" class="ui avatar image">
+                        <div class="content"><a href="#" class="header">怡人蝶梦</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i>2022-9-27
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i>1234
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+            <!--图片区域-->
+                <img src="https://picsum.photos/id/1005/800/600" alt="" class="ui fluid rounded image">
+            </div>
+            <div class="ui attached padded segment">
+                <!--内容-->
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange basic label">原创</div>
+                </div>
+                <h2 class="ui center aligned header">
+                    滕王阁序
+                </h2>
+                <br>
+                <!--<pre><code class="language-css">.p{}</code></pre>  代码高亮显示-->
+                <div id="content" class="m-padded-lr-responsive m-padded-tb-large ">
+                    <h2>1</h2>
+                    <p>豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰。台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临；宇文新州之懿范，襜帷暂驻。十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗；紫电青霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。</p>
+                    <h2>2</h2>
+                    <p>时维九月，序属三秋。潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。层峦耸翠，上出重霄；飞阁流丹，下临无地。鹤汀凫渚，穷岛屿之萦回；桂殿兰宫，即冈峦之体势。</p>
+                    <h2>3</h2>
+                    <p>披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
+                    </p>
+                    <h2>4</h2>
+                    <p>遥襟甫畅，逸兴遄飞。爽籁发而清风生，纤歌凝而白云遏。睢园绿竹，气凌彭泽之樽；邺水朱华，光照临川之笔。四美具，二难并。穷睇眄于中天，极娱游于暇日。天高地迥，觉宇宙之无穷；兴尽悲来，识盈虚之有数。望长安于日下，目吴会于云间。地势极而南溟深，天柱高而北辰远。关山难越，谁悲失路之人？萍水相逢，尽是他乡之客。怀帝阍而不见，奉宣室以何年？</p>
+                    <h2>5</h2>
+                    <p>嗟乎！时运不齐，命途多舛。冯唐易老，李广难封。屈贾谊于长沙，非无圣主；窜梁鸿于海曲，岂乏明时？所赖君子见机，达人知命。老当益壮，宁移白首之心？穷且益坚，不坠青云之志。酌贪泉而觉爽，处涸辙以犹欢。北海虽赊，扶摇可接；东隅已逝，桑榆非晚。孟尝高洁，空余报国之情；阮籍猖狂，岂效穷途之哭！</p>
+                    <h2>6</h2>
+                    <p>勃，三尺微命，一介书生。无路请缨，等终军之弱冠；有怀投笔，慕宗悫之长风。舍簪笏于百龄，奉晨昏于万里。非谢家之宝树，接孟氏之芳邻。他日趋庭，叨陪鲤对；今兹捧袂，喜托龙门。杨意不逢，抚凌云而自惜；钟期既遇，奏流水以何惭？</p>
+                    <h2>7</h2>
+                    <p>呜乎！胜地不常，盛筵难再；兰亭已矣，梓泽丘墟。临别赠言，幸承恩于伟饯；登高作赋，是所望于群公。敢竭鄙怀，恭疏短引；一言均赋，四韵俱成。请洒潘江，各倾陆海云尔：
+
+                        滕王高阁临江渚，佩玉鸣鸾罢歌舞。
+
+                        画栋朝飞南浦云，珠帘暮卷西山雨。
+
+                        闲云潭影日悠悠，物换星移几度秋。
+
+                        阁中帝子今何在？槛外长江空自流。</p>
+                </div>
+                <div class="m-padded-lr-responsive">
+                    <div class="ui basic teal left pointing label">方法论</div>
+                </div>
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui orange basic circular button">赞赏</button>
+                </div>
+                <div class="ui payQR flowing popup translation hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit">
+                            <div class="image">
+                                <img src="../static/images/wechatCode.jpg" alt="" class="ui rounded bordered image" style="width:200px">
+                                <div>支付宝</div>
+                            </div>
+                            <div class="image">
+                                <img src="../static/images/wechatCode.jpg" alt="" class="ui rounded bordered image" style="width:200px">
+                                <div>微信</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ui attached positive message">
+                <!--博客信息-->
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ul class="list">
+                            <li>作者</li>
+                            <li>发表时间</li>
+                            <li>版权声明</li>
+                            <li>公众号转载</li>
+                        </ul>
+                    </div>
+                    <div class="five wide column">
+                        <img src="../static/images/wechatCode.jpg" alt="" class="ui right floated rounded bordered image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="comment-content" class="ui bottom attached segment">
+                <div class="ui comments">
+                    <h3 class="ui dividing header">Comments</h3>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/id/1005/800/600">
+                        </a>
+                        <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Today at 5:42PM</span>
+                            </div>
+                            <div class="text">
+                                How artistic!
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/id/1005/800/600">
+                        </a>
+                        <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                                <span class="date">Yesterday at 12:30AM</span>
+                            </div>
+                            <div class="text">
+                                <p>This has been very useful for my research. Thanks as well!</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Reply</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://picsum.photos/id/1005/800/600">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Jenny Hess</a>
+                                    <div class="metadata">
+                                        <span class="date">Just now</span>
+                                    </div>
+                                    <div class="text">
+                                        Elliot you are always so right :)
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/id/1005/800/600">
+                        </a>
+                        <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                                <span class="date">5 days ago</span>
+                            </div>
+                            <div class="text">
+                                Dude, this is awesome. Thanks so much
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui form">
+                    <div class="field">
+                        <textarea name="content" placeholder="请输入评论信息..."></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="姓名">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="邮箱">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <button class="ui teal  button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-right-bottom m-fixed m-padded">
+            <div class="ui vertical icon buttons" >
+                <!--<button type="button" class="ui teal button">目录</button>-->
+                <a href="#comment-content" class="ui teal button">留言</a>
+                <button class="ui wechat teal icon button"><i class="weixin icon"></i></button>
+                <a href="#" class="ui teal icon button"><i class="chevron up icon"></i></a>
+            </div>
+        </div>
+        <div id="qrcode" class="ui wechatQR flowing popup transition hidden" style="width: 150px!important;">
+<!--            <img src="./static/images/wechatCode.jpg" alt="" class="ui rounded image" >-->
+        </div>
+<!--    footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/1.png" class="ui rounded image" alt="" style="width:100px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">11111111111</a>
+                        <a href="#" class="item">11111111111</a>
+                        <a href="#" class="item">11111111111</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">11111111111</a>
+                        <a href="#" class="item">11111111111</a>
+                        <a href="#" class="item">11111111111</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <p class="m-text-lined m-text-spaced m-opacity-mini">123456711111111111111111111111111111111111111111111111111111111111111111111111</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-lined m-text-spaced m-opacity-mini">1111111111111111111111111111111111111111111111111111</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../static/lib/prism/prism.js"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js"></script>
+<script>
+    $('.menu.toggle').click(function(){
+        $('.m-item').toggleClass('m-mobile-hide');
+        }
+    );
+    $('#payButton').popup({
+        popup: $('.payQR.popup'),
+        on : 'click',
+        position: 'bottom center'
+    });
+    $('.wechat').popup({
+        popup: $('.wechatQR'),
+        on : 'hover',
+        position: 'left center'
+    });
+    var qrcode = new QRCode("qrcode", {
+        text: "https://www.baidu.com",
+        width: 128,
+        height: 128,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+</script>
+</body>
+</html>
