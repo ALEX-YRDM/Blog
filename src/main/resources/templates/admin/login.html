@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>博客登陆管理</title>
@@ -31,7 +31,7 @@
                 </h2>
                 <br>
                 <br>
-                <form class="ui large form" method="post">
+                <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
                     <div class="ui  segment">
                         <div class="field">
                             <div class="ui left icon input">
@@ -45,10 +45,11 @@
                                 <input type="password" name="password" placeholder="密码">
                             </div>
                         </div>
-                        <div class="ui fluid large teal submit button">登录</div>
+                        <button class="ui fluid large teal submit button">登录</button>
                     </div>
 
                     <div class="ui error message"></div>
+                    <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用户名或密码错误</div>
                 </form>
             </div>
         </div>
@@ -63,6 +64,24 @@
         }
     );
     $('.ui.dropdown').dropdown({on: 'hover'});
+    $('.ui.form').form({
+        fields: {
+            username:{
+                identifier:'username',
+                rules:[{
+                    type:'empty',
+                    prompt: '请输入用户名'
+                }]
+            },
+            password: {
+                identifier: 'password',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入密码'
+                }]
+            }
+        }
+    });
 </script>
 </body>
 </html>
