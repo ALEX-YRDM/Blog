@@ -30,6 +30,7 @@ public class TagServiceImpl implements TagService{
         return tagRepository.save(tag);
     }
 
+    @Transactional
     @Override
     public Tag getTag(Long id) {
         return tagRepository.findById(id).get();
@@ -40,6 +41,7 @@ public class TagServiceImpl implements TagService{
         return tagRepository.findByName(name);
     }
 
+    @Transactional
     @Override
     public Page<Tag> listTag(Pageable pageable) {
         return tagRepository.findAll(pageable);
@@ -52,11 +54,14 @@ public class TagServiceImpl implements TagService{
 
     @Override
     public List<Tag> listTagTop(Integer size) {
-        return null;
+        Sort sort =Sort.by(Sort.Direction.DESC, "blogs.size");
+        Pageable pageable = PageRequest.of(0, size, sort);
+        return tagRepository.findTop(pageable);
     }
 
+
     @Override
-    public List<Tag> listTag(String ids) {
+    public List<Tag> listTag(String ids) { //1,2,3
         return null;
     }
 
@@ -71,6 +76,7 @@ public class TagServiceImpl implements TagService{
         return list;
     }
 
+
     @Transactional
     @Override
     public Tag updateTag(Long id, Tag tag) {
@@ -81,6 +87,8 @@ public class TagServiceImpl implements TagService{
         BeanUtils.copyProperties(tag,t);
         return tagRepository.save(t);
     }
+
+
 
     @Transactional
     @Override

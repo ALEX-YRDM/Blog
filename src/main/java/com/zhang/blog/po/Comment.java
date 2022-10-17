@@ -30,4 +30,5 @@ public class Comment {
     private List<Comment> replyComments=new ArrayList<>(); //一个父评论可以有多个子评论
     @ManyToOne
     private Comment parentComment; //多个子评论只有一个父评论
+    private boolean adminComment;
 }
