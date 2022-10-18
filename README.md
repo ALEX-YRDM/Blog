@@ -35,4 +35,8 @@
 * 前端UI: Semantic-UI框架
 * 后端: SpringBoot + JPA + thymeleaf模板
 * 数据库: MySQL
-
+## Bug
+* index页面 搜索框搜索后报500
+* 评论功能,无法提交
+* 一篇博客在修改后浏览量会清零
+* ...
