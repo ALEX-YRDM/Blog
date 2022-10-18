@@ -1,6 +1,5 @@
 package com.zhang.blog.service;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.zhang.blog.NotFoundException;
 import com.zhang.blog.dao.BlogRepository;
 import com.zhang.blog.po.Blog;
