@@ -1,7 +1,6 @@
 package com.zhang.blog.po;
 
 import lombok.Data;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,7 +18,9 @@ public class Blog {
     @Id
     @GeneratedValue
     private Long id;
+
     private String title;
+
     @Basic(fetch = FetchType.LAZY)
     @Lob
     private String content;
@@ -31,21 +32,30 @@ public class Blog {
     private boolean commentabled;
     private boolean published;
     private boolean recommend;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
+
     @ManyToOne
     private Type type;
+
     @ManyToMany(cascade = {CascadeType.PERSIST}) //级联新增,新增一个blog数据中增加一个tag(如果该tag不存在
     private List<Tag> tags=new ArrayList<>();
+
     @ManyToOne
     private User user;
+
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments=new ArrayList<>();
+
     @Transient
     private String tagIds;
+
     private String description;
+
     private String tagsToIds(List<Tag> tags) {
         if (!tags.isEmpty()) {
             StringBuffer ids = new StringBuffer();
