@@ -1,6 +1,9 @@
 package com.zhang.blog.po;
 
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,7 +29,7 @@ public class Blog {
     private String content;
     private String firstPicture;
     private String flag;
-    private Integer views;
+    private Integer views=0;
     private boolean appreciation;
     private boolean shareStatement;
     private boolean commentabled;
@@ -34,9 +37,12 @@ public class Blog {
     private boolean recommend;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @CreationTimestamp
+    @Column(columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP",insertable = true,updatable = false)
     private Date createTime;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @UpdateTimestamp
     private Date updateTime;
 
     @ManyToOne
