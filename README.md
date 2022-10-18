@@ -1,6 +1,6 @@
 # Spring Boot 开发个人博客
 ## 项目访问
-[项目访问地址:stackpop.top:8080/blog](stackpop.top:8080/blog)
+[项目访问地址:http://www.stackpop.top:8080/blog](http://www.stackpop.top:8080/blog)
 ## 1.功能
 * 角色: 普通游客
     * 查看博客详情页面
